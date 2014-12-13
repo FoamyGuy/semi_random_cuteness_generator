@@ -1,5 +1,5 @@
 
-# A very simple Flask Hello World app for you to get started with...
+# semi random cuteness generator
 
 from flask import Flask, redirect
 import json, requests
