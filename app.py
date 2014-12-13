@@ -1,6 +1,7 @@
 
 # semi random cuteness generator
 # pulls redit.com/r/aww returns a random png or jpeg from the front page.
+# more comments.
 
 from flask import Flask, redirect
 import json, requests
