@@ -11,16 +11,18 @@ import random
 app = Flask(__name__)
 
 def get_links():
-    """
+
     url = 'http://www.reddit.com/r/aww.json'
     resp = requests.get(url=url)
-    f = open("aww_posts.json", 'w')
+    f = open("./aww_posts.json", 'w')
     f.write(data)
     f.close()
+
     """
     f = open("aww_posts.json", 'r') 
     data = json.loads(f.read())
     f.close()
+    """
     raw_image_links = []
 
     for post in data['data']['children']:
