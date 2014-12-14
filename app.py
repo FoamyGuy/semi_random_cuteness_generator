@@ -14,11 +14,11 @@ def get_links():
 
     url = 'http://www.reddit.com/r/aww.json'
     resp = requests.get(url=url)
+    """
     f = open("./aww_posts.json", 'w')
     f.write(data)
     f.close()
 
-    """
     f = open("aww_posts.json", 'r') 
     data = json.loads(f.read())
     f.close()
