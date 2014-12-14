@@ -13,6 +13,9 @@ app = Flask(__name__)
 def get_links():
     url = 'http://www.reddit.com/r/aww.json'
     resp = requests.get(url=url)
+    f = open("aww_posts.json", 'w')
+    f.write(data)
+    f.close()
     data = json.loads(resp.text)
     raw_image_links = []
 
